@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Zelda';
+    src: url('Zelda_font/thewildbreathofzelda-15lv-webfont.eot');
+    src: url('Zelda_font/thewildbreathofzelda-15lv-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Zelda_font/thewildbreathofzelda-15lv-webfont.woff') format('woff'),
+         url('Zelda_font/thewildbreathofzelda-15lv-webfont.ttf') format('truetype'),
+         url('Zelda_font/thewildbreathofzelda-15lv-webfont.svg#the_wild_breath_of_zeldaRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin : 0;
+}
+
+canvas {
+    background-image : url('picture/chickenBG_1.png');
+    animation : changeBG .6s infinite;
+}
+
+@keyframes changeBG {
+    0% {
+        background-image : url('picture/chickenBG_1.png');
+    }
+    
+    25% {
+        background-image : url('picture/chickenBG_2.png');
+    }
+    
+    50% {
+        background-image : url('picture/chickenBG_3.png');
+    }
+    
+    75% {
+        background-image : url('picture/chickenBG_2.png');
+    }
+    
+    100% {
+        background-image : url('picture/chickenBG_1.png');
+    }
+}
